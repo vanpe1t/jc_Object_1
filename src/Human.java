@@ -1,22 +1,27 @@
 import java.util.Objects;
 
 public class Human {
+    private int yearOfBirth;
+    private String name;
+    private String town;
+    private String jobTitle;
 
-    public int yearOfBirth;
-    public String name;
-    public String town;
-    public String jobTitle;
+    public Human(String name, int yearOfBirth, String town, String jobTitle) {
+        if (yearOfBirth < 0 ) {
+            this.yearOfBirth = 0;
+        }
 
-    public Human() {
-        this.yearOfBirth = 0;
-        this.name = "John Doe";
-        this.town = "Ghost city";
-    }
+        if (name == null || name.equals("")) {
+            this.name = "Информация не указана";
+        }
 
-    public Human(String name, int yearOfBirth, String town) {
-        this.name = name;
-        this.yearOfBirth = yearOfBirth;
-        this.town = town;
+        if (name == null || town.equals("")) {
+            this.town = "Информация не указана";
+        }
+
+        if (name == null || jobTitle.equals("")) {
+            this.jobTitle  = "Информация не указана";
+        }
     }
 
     @Override
