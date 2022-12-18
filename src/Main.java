@@ -20,6 +20,9 @@ public class Main {
         System.out.println(kate);
         System.out.println(arty);
 
+        Human johnDoe = new Human("", -1, "", "");
+        System.out.println(johnDoe);
+
     }
 }
 

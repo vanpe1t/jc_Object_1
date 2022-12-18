@@ -9,18 +9,26 @@ public class Human {
     public Human(String name, int yearOfBirth, String town, String jobTitle) {
         if (yearOfBirth < 0 ) {
             this.yearOfBirth = 0;
+        } else {
+            this.yearOfBirth = yearOfBirth;
         }
 
         if (name == null || name.equals("")) {
             this.name = "Информация не указана";
+        } else {
+            this.name = name;
         }
 
         if (name == null || town.equals("")) {
             this.town = "Информация не указана";
+        } else {
+            this.town = town;
         }
 
         if (name == null || jobTitle.equals("")) {
             this.jobTitle  = "Информация не указана";
+        } else {
+            this.jobTitle  = jobTitle;
         }
     }
 
